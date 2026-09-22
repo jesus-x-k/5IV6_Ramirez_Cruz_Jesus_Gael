@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Node.js</h1>
+    </header>
+
+    <main>
+        <section class="ejercicio">
+            <h2 id="titulo-arreglos"> Arreglos del código
+                <code>Arreglos</code> </h2>
+            <p>Datos de prueba con JS</p>
+
+        <div class="Tabla scroll"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Instructor</th>
+                    <th>Cupos</th>
+                    <th>Inscritos</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        </div>
+
+        <form id ="form-arreglos" class="formulario">
+            <div class="campos">
+                <label for="operacion-arreglos" name="operacion-arreglo">Operacion</label> 
+                <select id="operacion-arreglo" name="operacion-arreglo">
+                    <option value="forEach">forEach</option>
+                    <option value="map">map</option>
+                    <option value="filter">filter</option>
+                    <option value="find">find</option>
+                    <option value="reduce">reduce</option>
+                    <option value="filter + map">filter + map</option>
+                </select>
+            </div>
+            <button type="submit">Ejecutar</button>
+        </form>
+        
+        <div class="resultado-contenedor">
+            <h3>Resultado:</h3>
+            <pre id="resultado-arreglo"></pre>
+        </div>
+    </section>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
