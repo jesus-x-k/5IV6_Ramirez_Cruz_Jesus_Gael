@@ -73,5 +73,19 @@ formArreglos.addEventListener('submit', (evento) => {
             resultado = 'Operación no válida';
     }
     resultadoArreglos.textContent = resultado;
+
+
+    const formObjeto= document.getElementById('form-objeto')
+    const resultadoObjeto = document.getElementById('resultado-objeto');
+
+    formObjeto.addEventListener('submit', (evento) => {
+        evento.preventDefault();
+
+        const taller = {
+            nombre: document.getElementById('obj-nombre').value
+            instructor : 
+        }
+    })
+
 });
 
