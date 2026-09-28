@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href= "style.css">
 </head>
 <body>
     <header>
@@ -62,23 +63,38 @@
                 <label for="obj-nombre">Nombre </label>
                 <input type="text" id="obj-nombre" name="obj-nombre" value="Introducción a Python">
             </div>
-            <div class="campo campo-corta">
-                <label for="obj-instructor">Instructor </label>
-                <input type="text" id="obj-instructor" name="obj-instructor" value="Ing. Maria Lopez">
+            <div class="campo-corta">
+                    <label for="obj-instructor">Instructor</label>
+                    <input type="text" id="obj-instructor" name="obj-instructor" value="Ing. María López">
                 </div>
 
-           <div class="campo campo-corta">
-                <label for="obj-cupo">Cupo </label>
-                <input type="text" id="obj-cupo" name="obj-cupo" value="25" min="0">
+                <div class="campo-corta">
+                    <label for="obj-cupo">Cupo</label>
+                    <input type="text" id="obj-cupo" name="obj-cupo" value="25" min="0">
                 </div>
 
-                section class="ejercicio" aria-labelledby="titulo-objeto">
-                <form class 
-                
-        
+                <div class="campo-corta">
+                    <label for="obj-inscritos">Inscritos</label>
+                    <input type="text" id="obj-inscritos" name="obj-inscritos" value="25" min="0">
+                </div>
+
+                <div class="campo">
+                    <label for="operacion-objeto">Operación a realizar</label>
+                    <select name="operacion-objeto" id="operacion-objeto">
+                        <option value="keys">Object.keys</option>
+                        <option value="values">Object.value</option>
+                        <option value="entries">Object.entries</option>
+                        <option value="stringify">JSON.stringify</option>
+                        <option value="roundtrip">Ida y vuelta de cadena a JSON</option>
+                    </select>
+                </div>
+                <button type="submit">Ejecutar opción de objeto</button>
+            </form>
+            <output class="resultado" id="resultado-objeto" for="form-objeto"></output>
+
+        </section>
     </main>
 
-
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

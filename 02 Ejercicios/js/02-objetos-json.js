@@ -25,3 +25,5 @@ const taller = {
 
     console.log('Ivertir de cadena a JSON');
     const objetodevuelta = JSON.parse
+    console.log("tipo", typeof objetoDeVuelta)
+    console.log(objetoDeVuelta.nombre);
